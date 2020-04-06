@@ -1,0 +1,9 @@
+<div *ngIf="rental; else Loading">
+  <p>{{rental.id}}</p>
+  <h1>{{rental.title}}</h1>
+  <h2>${{rental.dailyRates}}</h2>
+  <p>{{rental.description}}</p>
+</div>
+<ng-template #Loading>
+  <h1>Loading</h1>
+</ng-template>
